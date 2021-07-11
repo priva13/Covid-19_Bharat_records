@@ -1,7 +1,5 @@
-name: Fetch Data
-on:
-  schedule:
-    - cron:  '0 * * * *'
+name: Manually Test Fetch Data
+on: workflow_dispatch
 jobs:
   fetchstatedata:
     runs-on: ubuntu-latest
