@@ -1,7 +1,7 @@
 name: Fetch Data
-on:
-  schedule:
-    - cron:  '0 * * * *'
+on: 
+   schedule:
+       - cron: '0 * * * *'
 jobs:
   fetchstatedata:
     runs-on: ubuntu-latest
@@ -21,7 +21,7 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add data/*
+          git add -A
           git commit -am "Automatically Updated State Data"
           git push
   fetchdistrictdata:
@@ -42,6 +42,6 @@ jobs:
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add data/*
+          git add -A
           git commit -am "Automatically Updated District Data"
           git push
