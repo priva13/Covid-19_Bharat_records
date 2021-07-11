@@ -1,15 +1,15 @@
 name: Fetch Data
 on: 
    schedule:
-       - cron: '0 * * * *'
+     - cron: '0 * * * *'
 jobs:
   fetchstatedata:
     runs-on: ubuntu-latest
     name: Fetch State Data
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@master
         with:
           python-version: '3.x'
       - name: Run Script
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Fetch District Data
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@master
         with:
           python-version: '3.x'
       - name: Run Script
