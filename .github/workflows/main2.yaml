@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Fetch State Data
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Set up Python
-        uses: actions/setup-python@master
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
       - name: Run Script
@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Fetch District Data
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: Set up Python
-        uses: actions/setup-python@master
+        uses: actions/setup-python@v2
         with:
           python-version: '3.x'
       - name: Run Script
