@@ -45,3 +45,7 @@ jobs:
           git add -A
           git commit -am "Automatically Updated District Data"
           git push
+        
+        env: |
+          REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+          username: github-actions
