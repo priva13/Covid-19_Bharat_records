@@ -15,7 +15,7 @@ print('checking for new district data on', today)
 # https://stackoverflow.com/a/20007730
 ordinal = lambda n: "%d%s" % (n,"tsnrhtdd"[(n//10%10!=1)*(n%10<4)*n%10::4])
 
-monthname = ['January', 'February', 'March', 'April', 'May', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+monthname = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
 date1 = ordinal(today.day) + monthname[today.month - 1]
 date2 = str(today.day) + monthname[today.month - 1].lower()
 currentdate = str(today.date())
