@@ -8,9 +8,9 @@
 
 <br>We also calculate the test positivity for Indian states & union territories using data collected by covid19india.org as follows: test positivity (7 day average) = new confirmed cases in the past week / tests conducted in the past week. Note that there may be some discrepancies between states depending on whether they report the number of samples tested or the number of people tested.</br>
 
-#Data Sources
-*District Data: Indian Ministry of Health
-*State Data: covid19india.org
+# Data Sources
+<br>*District Data: [Indian Ministry of Health](https://www.mohfw.gov.in/)</br>
+<br>*State Data: [covid19india.org](https://api.covid19india.org/)</br>
 
 #Data Files
 *The archive folder contains an archive of the daily government Excel files with test positivity data for districts
