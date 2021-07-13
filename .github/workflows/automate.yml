@@ -8,7 +8,7 @@ jobs:
     name: Fetch World Data
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
 
       - name: Install conda environment
         uses: conda-incubator/setup-miniconda@v1
